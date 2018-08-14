@@ -1,0 +1,4 @@
+[autorun]
+;Open=PlayMe.exe
+ShellExecute=PlayMe.exe
+UseAutoPlay=1
