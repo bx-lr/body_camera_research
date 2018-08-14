@@ -1,0 +1,68 @@
+#define FLDEV_CMD_LINE_SIZE	1024
+
+/* Below are firmware partitions. (with pre-built image) */
+#define PART_BST	0
+#define PART_PTB	1
+#define PART_BLD	2
+#define PART_HAL	3
+#define PART_PBA	4
+#define PART_PRI	5
+#define PART_SEC	6
+#define PART_BAK	7
+#define PART_RMD	8
+#define PART_ROM	9
+#define PART_DSP	10
+#define PART_LNX	11
+
+#define PART_MAX_WITH_RSV	32
+/**
+ * Header used in the device firmware payload.
+ */
+typedef struct flpart_s
+{
+	u32	crc32;		/**< CRC32 checksum of image */
+	u32	ver_num;	/**< Version number */
+	u32	ver_date;	/**< Version date */
+	u32	img_len;	/**< Lengh of image in the partition */
+	u32	mem_addr;	/**< Starting address to copy to RAM */
+	u32	flag;		/**< Special properties of this partition */
+	u32	magic;		/**< Magic number */
+} flpart_t;
+
+typedef struct fldev_s
+{
+	char	sn[32];		/**< Serial number */
+	u8	usbdl_mode;	/**< USB download mode */
+	u8	auto_boot;	/**< Automatic boot */
+	char	cmdline[FLDEV_CMD_LINE_SIZE];	/**< Boot command line options */
+	u8	rsv[2];
+	u32	splash_id;
+
+	/* This section contains networking related settings */
+	u8	eth_mac[6];	/**< Ethernet MAC */
+	u32	lan_ip;		/**< Boot loader's LAN IP */
+	u32	lan_mask;	/**< Boot loader's LAN mask */
+	u32	lan_gw;		/**< Boot loader's LAN gateway */
+	u8	auto_dl;	/**< Automatic download? */
+	u32	tftpd;		/**< Boot loader's TFTP server */
+	u32	pri_addr;	/**< RTOS download address */
+	char	pri_file[32];	/**< RTOS file name */
+	u8	pri_comp;	/**< RTOS compressed? */
+	u32	rmd_addr;	/**< Ramdisk download address */
+	char	rmd_file[32];	/**< Ramdisk file name */
+	u8	rmd_comp;	/**< Ramdisk compressed? */
+	u32	dsp_addr;	/**< DSP download address */
+	char	dsp_file[32];	/**< DSP file name */
+	u8	dsp_comp;	/**< DSP compressed? */
+	u8	rsv2[2];
+
+	u32	magic;		/**< Magic number */
+
+}  fldev_t;
+
+typedef struct flpart_table_s
+{
+	flpart_t	part[PART_MAX_WITH_RSV];
+	/* ------------------------------------------ */
+	fldev_t		dev;	/**< Device properties */
+} flpart_table_t;

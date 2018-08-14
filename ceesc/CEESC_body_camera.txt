@@ -1,0 +1,49 @@
+CEESC body camera
+
+Purchase Link:
+	https://www.amazon.com/gp/product/B0762KP92V/ref=oh_aui_detailpage_o04_s00?ie=UTF8&psc=1
+
+Manufacturer	
+	Advanced Plus Group LTD
+
+ASIN	
+	B0762KP92V
+
+Item model number	
+	SCNEW-12575
+
+FCC:
+	NOT FOUND! https://fccid.io/2ANAP
+
+Manufacturer site
+	http://www.hkcect.com/
+
+Chip 
+	SC23240L silvan chip 170405 www.sc-tech.cn/SC2240L.pdf
+
+Oscillator
+	433.92
+
+Xmit Freq:
+	433817000
+
+rtl_433:
+	identifies remote as smoke detector gs 558
+
+Replay Attack
+	currently just hackrf 
+	todo: rfcat
+
+USB:
+	Arbitrary files can be placed on the device upload / download 
+	File modification possible
+	deletion of evidence possible 
+	Ambarella metadata in jpg and mp4 files... maybe software version information?
+	Autorun.inf working requires gpedit of computer configuration -> administrative templates -> windows components -> Autoplay Policies -> turn of autoplay = disabled
+	Autorun.inf contents:
+	 [autorun]
+	 ;Open=PlayMe.exe
+	 ShellExecute=PlayMe.exe
+	 UseAutoPlay=1
+	cve-2017-8464 - https://www.exploit-db.com/exploits/42429/ microsoft lnk file auto execute
+
