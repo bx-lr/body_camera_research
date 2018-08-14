@@ -1,0 +1,43 @@
+http://storage.vievusolution.com/software/web/NK2888FD.BRN
+$ md5sum.exe NK2888FD.BRN
+24cfed7b99603357bec3abe596d32736 *NK2888FD.BRN
+
+$ md5sum.exe  Firmware_Updater.exe
+31c74d454444198bd9abd56ea136a1e9 *Firmware_Updater.exe
+
+try
+
+rtsp://192.168.1.1/MJPG?W=720&H=400&Q=50&
+BR=5000000
+
+3 + 6 + 5 
+
+works!
+rtsp://172.10.0.1/MJPEG?W=640&H=360&Q=50&BR=3000000
+
+
+welcomd to iCatch FTP Server
+ftp 172.10.0.1
+user wifiuser
+pass wifiuser
+
+TYPE I
+PASV
+
+
+
+upload / download videos
+annotate metadata
+/VIDEO/Categories.json
+
+DELE /VIDEO/2018-07-25_20-32-10.AVI.VP.JSON
+STOR /VIDEO/2018-07-25_20-32-10.AVI.VP.JSON
+RETR /VIDEO/2018-07-25_20-32-10.AVI
+
+also check out 
+picture transfer protocol port 15740
+
+desktop app connects with camera over 
+CreateFileA('\\.\COM3')
+ReadFile
+WriteFile
