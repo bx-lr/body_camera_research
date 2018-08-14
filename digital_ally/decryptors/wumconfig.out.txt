@@ -1,0 +1,1 @@
+SN=00000000|Server=someserver,port=0|FtpUser=username,pw=70617373776f7264,port=21,dir=/|SSID=ssid,WPAPSK=77706170617373,Channel=0,AuthMode=WPA2PSK,EncrypType=AES;

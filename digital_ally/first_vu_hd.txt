@@ -1,0 +1,100 @@
+Digital Ally
+
+Purchase Link:
+	ebay
+
+Manufacturer:
+	Digital Ally
+
+Item Model Number:
+	First Vu HD
+
+FCC:
+
+
+Manufacturer Site:
+	http://www.digitalallyinc.com/bodyWornCams.cfm
+	
+Desktop software:
+	on device (vuvault)
+
+Smartphone software:
+	vuvault
+
+MAC
+
+
+ssid
+
+
+password
+
+OS:
+
+services:
+
+
+
+$ md5sum base.apk
+aa6458efc3b5d09b48b860113ffdfd1e *base.apk
+
+
+$ md5sum FirstVuHD_Firmware_1087.zip
+602f53557e62ce9f1c89055951ce5f2b *FirstVuHD_Firmware_1087.zip
+
+// Xceed.Zip.QuickZip
+check for zip file directory traversal when unzipping data from device:
+	lnk for hotkey activation 
+	https://github.com/defcon-russia/shortcut_auto_bind/blob/master/README.md
+	point it to meterpreter
+	omgwtfpwn'd
+
+checkout binary planting vulns!
+
+
+check multimedia filetype asf
+
+supported types in the device
+daz 
+mtd
+rmt
+vm2
+vmm
+
+
+wtf encryption
+// DigitalAlly.Security.Cryptography.XmlEncryption
+
+// DigitalAlly.Security.Cryptography.HashVault
+private static readonly string vaultPass = "Xv87J2k1"; !!!
+
+// DigitalAlly.Security.UserSecurity
+text = "E$q3rX6{-pR9eW5}H7/f";
+
+
+// DigitalAlly.Security.Cryptography.XmlEncryption
+
+
+
+This zip file does not contain a MTD file. ?
+// DigitalAlly.MediaViewer.Views.PlayerView 
+OpenMediaFile()
+
+
+get log information by creating log file on device
+
+firmware.r notes:
+extract files with binwalk -e
+gets 2 tar files 
+
+compress extracted file
+bzip2 -z -k filename
+
+firmware.r has a 18 byte header before the first file
+
+the second file has a header as well
+
+the second file has a footer with the crc32 of the file
+
+the second file has a second dword after the crc32 not sure what it is 
+
