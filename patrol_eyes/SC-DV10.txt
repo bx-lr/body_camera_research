@@ -1,0 +1,88 @@
+SC-DV10 Patrol Eyes Body Camera
+
+Purchase Link:
+	http://stuntcams.com/shop/patroleyes-wifi-hd-infrared-police-body-camera-p-1130.html
+
+Manufacturer:
+	Patrol Eyes
+
+Item Model Number:
+	SC-DV10
+
+FCC:
+
+
+Manufacturer Site:
+
+
+Software:
+	Desktop (CamManager.zip http://www.stuntcams.com/sc-dv10)
+	Smartphone (linkineyes)
+
+
+Linkineyes Wifi (button activated):
+	ssid: AMBA_BOSS_XXXXX
+	default password: 0987654321
+	can download files and update settings
+
+
+CamManager:
+	win xp - win 10
+	disable driver verification!!
+	different modes:
+		General User - only for downloading media, default password 000000
+		Administrator - change device settings and download files, default password 888888
+
+
+DMT10.dll
+	verifypassword - if password > 16 chars it strips to 16
+	setpassword - only takes 16 char len passwords
+
+
+libbusb0.dll (libusb-win32)
+	created mar 16 2011
+	version 1.2.3.0
+
+Remote root access:
+	enable wifi
+	connect to AMBA_BOSS_******
+	default wifi password 0987654321
+	nc 192.168.42.1 23
+	user id: root
+	no password
+
+password shortened to 16 characters
+
+desktop software:
+	Cam Manager
+	general user password:
+		000000
+	administrator password:
+		888888
+
+wifi mac
+	00e04cc51489
+
+service on 7878:
+	json request message 
+
+
+
+13ffac9284715a57c4a9c3b32aa4db0b *SC-DV10_Software.zip
+980436e76a2a29a9afadc4144b86a1f2 *CamManager.exe
+c3a748deafb47620840af26298031a24 *DMT10.dll
+1b8564ef01c31f63ceb22bbe75bd7e44 *libusb0.dll
+f32077df74efd435a1dcdf415e189df1 *mfc100u.dll
+bf38660a9125935658cfa3e53fdc7d65 *msvcr100.dll
+2eda1e22436113ec4e59a3ea359fccdc *Readme.txt
+
+
+b4a406d0158c98e4c1063687c077dad2 *base.apk linkineyes
+$ md5sum firmware.bin
+http://www.stuntcams.com/shop/resources/SC-DV10/Firmware/firmware.bin
+8d5739bd2ef76c9b4dbe3703b7fd8598 *firmware.bin
+
+
+/bin # cat /proc/version
+cat /proc/version
+Linux version 2.6.38.8 (tony@ubuntu) (gcc version 4.7.3 (Sourcery CodeBench Lite 2013.05-24) ) #1 PREEMPT Fri Jan 6 15:47:22 CST 2017
