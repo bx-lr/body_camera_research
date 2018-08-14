@@ -1,0 +1,52 @@
+Paul Conway OnCall
+
+Purchase Link:
+	http://fire.paulconwayshields.com/oncall-body-worn-cameras-for-law-enforcement.html
+
+Manufacturer:
+	Paul Conway
+
+Item Model Number:
+	OC-P-PRO
+
+FCC:
+
+
+Manufacturer Site:
+
+
+Desktop software:
+	NOT AVAILABLE
+
+Smartphone software:
+	https://play.google.com/store/apps/details?id=mviewmobile.Oncall&hl=en
+	didnt work ... must re to find out whats broken
+
+ 
+MAC
+	08:d8:33:73:09:b4
+
+ssid
+	FIRE-CAM
+
+password
+	00000000
+
+Everything available at
+	http://192.168.1.254/
+	settings.txt
+	DCIM
+	System Volume Information
+
+$ md5sum.exe base.apk
+e9c125948a29201e61b9c0238fdb8604 *base.apk
+
+http server on internal AP
+	Server eCos/1.0
+
+rtsp:
+	D-link DCS-2130 or Pelco IDE10DN webcap rtspd
+	rtsp methods OPTONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE, GET_PARAMETER, SET_PARAMETER
+
+
+
